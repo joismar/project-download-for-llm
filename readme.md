@@ -1,6 +1,6 @@
 # Processador de Código para LLMs
 
-Este projeto é uma aplicação que processa repositórios do GitHub ou arquivos ZIP contendo código-fonte, dividindo-os em chunks para uso com modelos de linguagem (LLMs). Ele inclui um frontend em HTML/JavaScript e uma função backend (lambda) para baixar repositórios do GitHub.
+Este projeto é uma aplicação que processa repositórios do GitHub ou arquivos ZIP contendo código-fonte, dividindo-os em chunks para uso com modelos de linguagem (LLMs). Ele inclui um frontend em HTML/JavaScript e uma função backend (supabase) para baixar repositórios do GitHub.
 
 ---
 
@@ -31,7 +31,7 @@ project-download-for-llm/
 ├── supabase/
 │   └── functions/
 │       └── download-github-repo/
-│           └── index.ts  # Função lambda para baixar repositórios do GitHub
+│           └── index.ts  # Função para baixar repositórios do GitHub
 └── README.md           # Documentação do projeto
 ```
 
@@ -47,9 +47,9 @@ project-download-for-llm/
 
 ---
 
-### 2. Testar a Função Lambda Localmente
+### 2. Testar a Função Localmente
 
-A função lambda está localizada em index.ts. Para testá-la localmente:
+A função está localizada em index.ts. Para testá-la localmente:
 
 1. **Executando com Deno**:
    No terminal, execute:
@@ -69,7 +69,7 @@ A função lambda está localizada em index.ts. Para testá-la localmente:
 
 ---
 
-### 3. Fazer Deploy da Função Lambda no Supabase
+### 3. Fazer Deploy da Função no Supabase
 
 1. **Instalar o Supabase CLI**:
    Siga as instruções de instalação no site oficial: [Supabase CLI](https://supabase.com/docs/guides/cli).
@@ -116,7 +116,7 @@ A função lambda está localizada em index.ts. Para testá-la localmente:
 
 2. **Erro ao baixar repositório do GitHub**:
    - Verifique se a URL do repositório é válida.
-   - Certifique-se de que a função lambda está configurada corretamente.
+   - Certifique-se de que a função está configurada corretamente.
 
 ---
 
